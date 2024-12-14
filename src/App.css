@@ -1,0 +1,92 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #f0f4f9;
+  background: radial-gradient(circle, #0a1428, #1e1e2e, #10182e);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1e2a42;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #f0f4f9;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #2d3e5e;
+  color: #b5e0f7;
+}
+
+/* Layout */
+.add-rune-set {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.champion-section,
+.rune-section {
+  width: 45%;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(30, 30, 46, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.champion-section {
+  border-right: 2px solid #007bff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00aaff;
+  text-shadow: 0 0 8px #00aaff;
+}
+
+/* Champion Card */
+.champion-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1e2a42;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.champion-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.champion-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlight Selected Champion */
+.champion-card.selected {
+  border: 2px solid #00aaff;
+  box-shadow: 0 0 15px #00aaff;
+  transform: scale(1.05);
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #f0f4f9;
+  background: radial-gradient(circle, #0a1428, #1e1e2e, #10182e);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.add-rune-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00aaff;
+  text-shadow: 0 0 8px #00aaff;
+}
+
+.champion-section,
+.rune-section {
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(30, 30, 46, 0.8); /* Semi-transparent box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.champion-section {
+  border-right: 2px solid #007bff;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
